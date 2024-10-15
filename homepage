@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Online Journal</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#submit">Submit Article</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About the Journal</h2>
+            <p>Description of the journal.</p>
+        </section>
+        <section id="articles">
+            <h2>Recent Articles</h2>
+            <!-- Article entries will be dynamically inserted here -->
+        </section>
+        <section id="submit">
+            <h2>Submit Your Article</h2>
+            <form id="submission-form">
+                <input type="text" name="title" placeholder="Article Title" required>
+                <textarea name="content" placeholder="Article Content" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Online Journal</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
