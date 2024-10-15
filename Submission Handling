@@ -1,0 +1,21 @@
+document.getElementById('submission-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const title = event.target.title.value;
+    const content = event.target.content.value;
+
+    const response = await fetch('http://localhost:5000/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ title, content }),
+    });
+
+    if (response.ok) {
+        alert('Article submitted successfully!');
+        // Optionally, refresh the articles section here
+    } else {
+        alert('Submission failed!');
+    }
+});
